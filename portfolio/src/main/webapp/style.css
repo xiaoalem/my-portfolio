@@ -4,6 +4,11 @@
   width: 650px;
 }
 
+.head_profile_image {
+  display: inline;
+  vertical-align: middle;
+}
+
 #greeting-container {
   margin-top: 20px;
 }
