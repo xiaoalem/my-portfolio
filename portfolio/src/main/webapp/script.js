@@ -17,7 +17,7 @@
  */
 function addRandomGreeting() {
   const greetings =
-      ['Hello world!', '¡Hola Mundo!', '你好，世界！', 'Bonjour le monde!'];
+      ['I got to know Python when I was studying Forestry  in Finland', 'Seville is my favorite city of tourism', 'I\'m fan of polar bear', 'I\'ve lived in Canada for 8 years, but I\'v never been to the capital'];
 
   // Pick a random greeting.
   const greeting = greetings[Math.floor(Math.random() * greetings.length)];
@@ -26,3 +26,7 @@ function addRandomGreeting() {
   const greetingContainer = document.getElementById('greeting-container');
   greetingContainer.innerText = greeting;
 }
+
+let navlist = document.querySelector('.navlist');
+
+navlist.classList.toggle('active');
