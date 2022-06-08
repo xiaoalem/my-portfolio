@@ -179,7 +179,7 @@ header.sticky{
         transition: .3s;
     }
 }
-#greeting-container {
+#fact-container {
   color: var(--main-color);
   margin-top: 20px;
 }
@@ -199,3 +199,12 @@ header.sticky{
   .image-thumbnails img:hover {
     border: thick solid var(--main-color);
   }
+
+.contact {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    min-height: 100vh;
+}
