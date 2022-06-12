@@ -93,7 +93,7 @@
       </section>
       
       <!---------Contact--------->
-      <section class="contact" id="contact">
+      <div class="contact" id="contact">
           <div class="title">
             <h1>Contact Me</h1>
           </div>
@@ -101,26 +101,27 @@
           <div class="form">
             <form action="/form-handler" method="POST">
                 <div class="inputBox">
-                    <p>First name*</p>
                     <input type="text" name="" required="required">
+                    <span>First name</span>
                 </div>
                 <div class="inputBox">
-                    <p>Last name*</p>
                     <input type="text" name="" required="required">
+                    <span>Last name</span>
                 </div>
                 <div class="inputBox">
-                    <p>Email*</p>
                     <input type="text" name="" required="required">
+                    <span>Email</span>
                 </div>
                 <div class="inputBox">
-                    <p>Comment</p>
-                    <textarea name="text-input">Leave your message</textarea><br/>
+                    <textarea name="text-input" required="required"></textarea>
+                    <span>Comment</span>
                 </div>
-            
-            <input type="submit" />
+                <div class="inputBox">
+                    <input type="submit" />
+                </div>
             </form>
           </div>
         
-    </section>
+        </div>
   </body>
 </html>
