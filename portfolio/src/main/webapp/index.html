@@ -22,6 +22,7 @@
             <li><a href="#home" class="btn">Home</a></li>
             <li><a href="#about" class="btn">About Me</a></li>
             <li><a href="#project" class="btn">Projects</a></li>
+            <li><a href="#contact" class="btn">Contact me</a></li>
           </ul> 
       </header>
     
@@ -55,12 +56,12 @@
               <h2>I'm very passionate to software and data engineering</h2>
               <p>In addition to the internships at Unity and Enviornment Canada, I have experience with geospatial analysis and hold a Master of Forestry degree from UBC.</br>
               I love to expand my passion with your company, team and you.</p>
-              <div id="greeting-container"></div>
+              <div id="fact-container"></div>
           </div>
           
           <p>I'm a mountain lover🏔🗻, click <a href="gallary.html">here</a> to see more mountains.</p>
-          <p>Click here to know more about: <button onclick="addRandomGreeting()">ME</button>
-        </p>
+          <p>Click here to know more about: <button onclick="factAboutMe()">ME</button></p>
+          <p>Say <a href="/hello">HELLO</a> to me</p>
           
       </section>
 
@@ -90,6 +91,37 @@
         </div>
           
       </section>
+      
+      <!---------Contact--------->
+      <div class="contact" id="contact">
+          <div class="title">
+            <h1>Contact Me</h1>
+          </div>
 
+          <div class="form">
+            <form action="/form-handler" method="POST">
+                <div class="inputBox">
+                    <input type="text" name="" required="required">
+                    <span>First name</span>
+                </div>
+                <div class="inputBox">
+                    <input type="text" name="" required="required">
+                    <span>Last name</span>
+                </div>
+                <div class="inputBox">
+                    <input type="text" name="" required="required">
+                    <span>Email</span>
+                </div>
+                <div class="inputBox">
+                    <textarea name="text-input" required="required"></textarea>
+                    <span>Comment</span>
+                </div>
+                <div class="inputBox">
+                    <input type="submit" />
+                </div>
+            </form>
+          </div>
+        
+        </div>
   </body>
 </html>

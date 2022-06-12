@@ -179,7 +179,7 @@ header.sticky{
         transition: .3s;
     }
 }
-#greeting-container {
+#fact-container {
   color: var(--main-color);
   margin-top: 20px;
 }
@@ -199,3 +199,58 @@ header.sticky{
   .image-thumbnails img:hover {
     border: thick solid var(--main-color);
   }
+
+.contact {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px 100px;
+    position: relative;
+    min-height: 100vh;
+}
+.inputBox {
+    margin-top: 10px;
+    position: relative;
+    width: 430px;
+}
+
+.inputBox input, 
+.inputBox textarea {
+    border: none;
+    border-bottom: 2px solid;
+    font-size: 16px;
+    margin: 10px 0;
+    outline: none;
+    padding: 5px 0;
+    resize: none;
+    width: 100%;
+}
+.inputBox span {
+    color: #666;
+    font-size: 16px;
+    left: 0;
+    margin: 10px 0;
+    padding: 5px 0;
+    pointer-events: none;
+    position: absolute;
+    transition: 0.5s;
+}
+.inputBox input:focus ~ span,
+.inputBox input:valid ~ span,
+.inputBox textarea:focus ~ span,
+.inputBox textarea:valid ~ span {
+    color: #e91e63;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+
+.inputBox input[type="submit"] {
+    background: var(--main-color);
+    border: none;
+    cursor: pointer;
+    color: var(--bg-color);
+    font-size: 18px;
+    padding: 10px;
+    width: 100%;
+}
