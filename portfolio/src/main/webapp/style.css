@@ -85,6 +85,7 @@ section{
 .upload {
     margin: 10px 50px 25px;
 }
+
 span{
     color: var(--main-color)
 }
@@ -191,17 +192,16 @@ header.sticky{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-  }
-  
-  .image-thumbnails img {
+}
+.image-thumbnails img {
     margin: 10px;
     max-height: 200px;
     max-width: 200px;
-  }
+}
   
-  .image-thumbnails img:hover {
+.image-thumbnails img:hover {
     border: thick solid var(--main-color);
-  }
+}
 
 .contact {
     align-items: center;

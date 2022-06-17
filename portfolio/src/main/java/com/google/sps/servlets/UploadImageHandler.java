@@ -5,7 +5,6 @@ import com.google.cloud.storage.BlobId;
 import com.google.cloud.storage.BlobInfo;
 import com.google.cloud.storage.Storage;
 import com.google.cloud.storage.StorageOptions;
-import com.google.cloud.storage.Storage.BlobWriteOption;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -25,6 +24,9 @@ import javax.servlet.http.Part;
 @WebServlet("/upload")
 @MultipartConfig
 public class UploadImageHandler extends HttpServlet{
+    private static String projectId = "ysun-sps-summer22";
+    private static String bucketName = "ysun-sps-summer22.appspot.com";
+    
     @Override
     public void doPost(HttpServletRequest request, HttpServletResponse response)
         throws ServletException, IOException {
@@ -48,8 +50,6 @@ public class UploadImageHandler extends HttpServlet{
 
     /** Uploads a file to Cloud Storage and returns the uploaded file's URL. */
     private static String uploadToCloudStorage(String fileName, InputStream fileInputStream) {
-    String projectId = "ysun-sps-summer22";
-    String bucketName = "ysun-sps-summer22.appspot.com";
     Storage storage =
         StorageOptions.newBuilder().setProjectId(projectId).build().getService();
     BlobId blobId = BlobId.of(bucketName, fileName);
