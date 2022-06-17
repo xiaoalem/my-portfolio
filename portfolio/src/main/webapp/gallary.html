@@ -22,7 +22,20 @@
     </header>
         <!------gallary-->
         <div class="home" id="home">
-            <div class="home-text"><h1><span>Rockies in 2022</span></h1></div>
+            <div class="home-text">
+                <h1><span>Rockies in 2022</span></h1>
+                
+                <div class="upload">
+                    <form action="/upload" method="POST" enctype="multipart/form-data">
+                        <p>Want to show your mountain photos?</p>
+                        <p>Upload an image:</p>
+                        <input type="file" name="image"><br/>
+                        <button>Submit</button><br/>
+                    </form>
+                    
+                    <p>Click <a href="/list-images">here</a> to see all of the uploaded images!</p>
+                </div>
+            </div>
             <div class="home-image">
             <div class="image-thumbnails">
                 <a href="images/summer.jpg"><img src="images/summer.jpg"></a>

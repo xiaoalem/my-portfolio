@@ -82,6 +82,9 @@ section{
     margin-bottom: 20px;
     line-height: 28px;
 }
+.upload {
+    margin: 10px 50px 25px;
+}
 span{
     color: var(--main-color)
 }
